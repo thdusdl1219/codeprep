@@ -81,9 +81,9 @@ def chars_handler(args):
 
 @dsc.command()
 def basic_handler(args):
-    """usage: {program} basic (-p <path> [-o <path-out>] | <text>) [-e <ext>] [-n [-r [-s]]]
+    """usage: {program} basic (-p <path> [-o <path-out>] | <text> | --stdin) [-e <ext>] [-n [-r [-s]]]
     [--no-spaces] [--no-unicode] [--no-case] [--no-com] [--no-str | -L=<max-str-length>]
-    [--calc-vocab] [--verbose] [--stdin]
+    [--calc-vocab] [--verbose]
 
 
     Preprocesses the dataset by splitting compound identifiers according to CamelCase and snake_case conventions.
