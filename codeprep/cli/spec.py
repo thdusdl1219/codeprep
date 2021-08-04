@@ -83,7 +83,7 @@ def chars_handler(args):
 def basic_handler(args):
     """usage: {program} basic (-p <path> [-o <path-out>] | <text>) [-e <ext>] [-n [-r [-s]]]
     [--no-spaces] [--no-unicode] [--no-case] [--no-com] [--no-str | -L=<max-str-length>]
-    [--calc-vocab] [--verbose]
+    [--calc-vocab] [--verbose] [--stdin]
 
 
     Preprocesses the dataset by splitting compound identifiers according to CamelCase and snake_case conventions.
@@ -114,6 +114,7 @@ def basic_handler(args):
       --calc-vocab -V                               Calculate vocabulary of the preprocessed dataset afterwards
 
       --verbose, -v                                 Print logs with log level DEBUG and higher to stdout.
+      --stdin, -std                                 Interactive mode
     """
     handle_splitting(args)
 
